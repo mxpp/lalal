@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>wamp | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="配置wamphosts文件的配置由于我们不可能每个人去买个域名，实现通过域名来访问我们开发的网站我们可以在hosts文件中自己添加一个假的域名，来指向我们将要开发的网站，就有了一个假象我们有域名了！！！  打开hosts文件 添加两行信息  12127.0.0.1 studyit.com127.0.0.1 www.studyit.com 配置wampwamp配置文件的目录(C:\wamp\bin\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wamp">
+<meta property="og:url" content="http://yoursite.com/2015/08/09/wamp/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="配置wamphosts文件的配置由于我们不可能每个人去买个域名，实现通过域名来访问我们开发的网站我们可以在hosts文件中自己添加一个假的域名，来指向我们将要开发的网站，就有了一个假象我们有域名了！！！  打开hosts文件 添加两行信息  12127.0.0.1 studyit.com127.0.0.1 www.studyit.com 配置wampwamp配置文件的目录(C:\wamp\bin\">
+<meta property="og:updated_time" content="2017-11-01T13:08:09.365Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="wamp">
+<meta name="twitter:description" content="配置wamphosts文件的配置由于我们不可能每个人去买个域名，实现通过域名来访问我们开发的网站我们可以在hosts文件中自己添加一个假的域名，来指向我们将要开发的网站，就有了一个假象我们有域名了！！！  打开hosts文件 添加两行信息  12127.0.0.1 studyit.com127.0.0.1 www.studyit.com 配置wampwamp配置文件的目录(C:\wamp\bin\">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-wamp" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/09/wamp/" class="article-date">
+  <time datetime="2015-08-09T12:58:05.000Z" itemprop="datePublished">2015-08-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      wamp
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="配置wamp"><a href="#配置wamp" class="headerlink" title="配置wamp"></a>配置wamp</h1><h2 id="hosts文件的配置"><a href="#hosts文件的配置" class="headerlink" title="hosts文件的配置"></a>hosts文件的配置</h2><p>由于我们不可能每个人去买个域名，实现通过域名来访问我们开发的网站<br>我们可以在hosts文件中自己添加一个假的域名，来指向我们将要开发的网站，就有了一个假象<br>我们有域名了！！！</p>
+<ol>
+<li>打开hosts文件</li>
+<li>添加两行信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">127.0.0.1 studyit.com</div><div class="line">127.0.0.1 www.studyit.com</div></pre></td></tr></table></figure>
+<h2 id="配置wamp-1"><a href="#配置wamp-1" class="headerlink" title="配置wamp"></a>配置wamp</h2><p>wamp配置文件的目录(<code>C:\wamp\bin\apache\Apache2.2.21\conf</code>)</p>
+<ol>
+<li><p>配置网站根目录（默认根目录）</p>
+<ol>
+<li>打开wamp的配置文件(<code>httpd.conf</code>)</li>
+<li>搜索<code>documentroot</code></li>
+<li>将后面的双引号中的内容改成 想要作为网站根目录的文件夹的路径</li>
+<li>将路径中的<code>\</code>全部换成<code>/</code></li>
+</ol>
+</li>
+<li><p>配置根目录的权限</p>
+<ol>
+<li>打开wamp的配置文件(<code>httpd.conf</code>)</li>
+<li>找到 <code>&lt;Directory &quot;C:/wamp/www/&quot;&gt;</code></li>
+<li>将双引号中的内容 改成 想要作为网站根目录的文件夹的路径</li>
+<li>将路径中的<code>\</code>全部换成<code>/</code></li>
+<li><code>&lt;Directory &quot;C:/wamp/www/&quot;&gt;</code>节点中的内容完全按照如下方式配置</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Directory</span> "<span class="attr">C:</span>/<span class="attr">Users</span>/<span class="attr">Ryan</span>/<span class="attr">Desktop</span>/<span class="attr">studyit</span>"&gt;</span></div><div class="line">    Options Indexes FollowSymLinks</div><div class="line">    AllowOverride all</div><div class="line">    Order Deny,Allow</div><div class="line">    Allow from all</div><div class="line"><span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>配置虚拟主机（Virtual Host  vhost）<br>vhost的配置中，做的主要的事情，就是将域名和网站根目录路径一一对应，以告诉apache当有通过指定的域名访问某个网站的时候，需要去哪个路径中找文件！！</p>
+<ol>
+<li>打开wamp的配置文件(<code>httpd.conf</code>)</li>
+<li>找到如下行</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#Include conf/extra/httpd-vhosts.conf</div></pre></td></tr></table></figure>
+<ol>
+<li>去掉前面的<code>#</code></li>
+<li>找到vhosts的配置文件</li>
+<li>在最下面添加如下内容</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">    DocumentRoot &quot;域名对应的根目录的路径&quot;</div><div class="line">    ServerName 域名（不带www的域名）</div><div class="line">    ServerAlias 域名的别名（带www的域名）</div><div class="line">    ErrorLog &quot;logs/dummy-host2.example.com-error.log&quot;</div><div class="line">    CustomLog &quot;logs/dummy-host2.example.com-access.log&quot; common</div><div class="line">&lt;/VirtualHost&gt;</div><div class="line"></div><div class="line">&lt;Directory &quot;域名对应的根目录的路径&quot;&gt;</div><div class="line">    Options Indexes FollowSymLinks</div><div class="line">    AllowOverride all</div><div class="line">    Order Deny,Allow</div><div class="line">    Allow from all</div><div class="line">&lt;/Directory&gt;</div></pre></td></tr></table></figure>
+<ol>
+<li>重启wamp 打开studyit.com 可以正常访问的</li>
+<li>如果以后还要为别的域名配置根目录，只需要将第五步中的内容复制粘贴一份，改成新域名的配置即可</li>
+<li>如果想要使用127.0.0.1 也需要配置一次，因为他也是一个域名！</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/08/09/wamp/" data-id="cj9h25odj0001gco06t69dgba" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/11/01/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/11/01/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2015/08/09/wamp/">wamp</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
